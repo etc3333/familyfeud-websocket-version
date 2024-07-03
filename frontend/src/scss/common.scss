@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Root-App {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: "Lora", serif;
+}
+
+.IP-input-container {
+  font-family: "Lora", serif;
+  color: white;
+  box-shadow: 0 0 10px 2px black;
+  height: 400px;
+  width: 600px;
+  border-radius: 20rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  background-color:hsla(223,73%,44%,1);
+  background-image:
+  radial-gradient(at 87% 67%, rgb(102, 145, 231) 0px, transparent 50%),
+  radial-gradient(at 71% 23%, rgb(102, 145, 231) 0px, transparent 50%),
+  radial-gradient(at 33% 81%, rgb(102, 145, 231) 0px, transparent 50%),
+  radial-gradient(at 24% 12%, rgb(102, 145, 231) 0px, transparent 50%);
+
+  > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.input-container {
+  position: relative;
+  margin-top: 1rem;
+  width: fit-content;
+
+  > span {
+    position: absolute;
+    right: -20px;
+    border-radius: 50rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+    height: 100%;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  > span > span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    text-align: center;
+    border: 0;
+    outline: 0;
+    border-radius: 50rem;
+    padding: 1px 2px;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px 2px black;
+  }
+}

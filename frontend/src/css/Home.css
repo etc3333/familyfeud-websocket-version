@@ -1,0 +1,93 @@
+#home-container {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #FE7203;
+  background-image: radial-gradient(circle at 56% 44%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 78% 89%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 24% 13%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 14% 74%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 50% 94%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 52% 24%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 75% 50%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 20% 58%, rgb(253, 201, 44) 0px, transparent 30%), radial-gradient(circle at 86% 20%, rgb(253, 201, 44) 0px, transparent 30%);
+  font-family: "Lora", serif;
+}
+#home-container .gradient-text-game, #home-container .gradient-text-host {
+  font-size: 5rem;
+  font-weight: bold;
+}
+#home-container .gradient-text-game:hover, #home-container .gradient-text-host:hover {
+  cursor: pointer;
+}
+#home-container .gradient-text-game {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #da5b00;
+  background-image: linear-gradient(to bottom, #ff7c12, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#home-container .gradient-text-host {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #003CCB;
+  background-image: linear-gradient(to bottom, #FFFFFF, #31A7F4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#home-container #nav-box {
+  border-radius: 20rem;
+  height: 400px;
+  width: 600px;
+  box-shadow: 0 0 10px 2px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: hsl(354, 100%, 51%);
+  background-image: radial-gradient(at 20% 23%, #ffbcbc 0px, transparent 50%), radial-gradient(at 79% 72%, #ffbcbc 0px, transparent 50%), radial-gradient(at 22% 73%, #ffbcbc 0px, transparent 50%), radial-gradient(at 77% 28%, #ffbcbc 0px, transparent 50%), radial-gradient(at 51% 47%, #ffbcbc 0px, transparent 50%);
+}
+#home-container #nav-box > div {
+  width: 95%;
+  height: 95%;
+  border-radius: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(223, 73%, 44%);
+  background-image: radial-gradient(at 87% 67%, rgb(102, 145, 231) 0px, transparent 50%), radial-gradient(at 71% 23%, rgb(102, 145, 231) 0px, transparent 50%), radial-gradient(at 33% 81%, rgb(102, 145, 231) 0px, transparent 50%), radial-gradient(at 24% 12%, rgb(102, 145, 231) 0px, transparent 50%);
+  box-shadow: 0 0 5px 1px black;
+}
+#home-container input[type=text] {
+  outline-width: 0;
+  border: 0;
+  background-color: white;
+  border-radius: 50rem;
+  text-align: center;
+  font-size: 1.5rem;
+  box-shadow: 0 0 5px 1px black;
+}
+#home-container input[type=text]::placeholder {
+  color: grey;
+}
+#home-container #host-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#home-container hr {
+  border: 0;
+  border-top: 1px solid black;
+  width: 75%;
+  background-color: transparent;
+}
+
+@media (max-width: 599px) {
+  #home-container .gradient-text-game, #home-container .gradient-text-host {
+    background-color: red;
+    font-size: 3rem;
+  }
+  #home-container input[type=text] {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */
